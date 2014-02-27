@@ -304,7 +304,7 @@ body.single-project .flexslider { min-height: 485px; }
 .main-navigation li:hover > a,
 .main-navigation li a:hover {
 	background-color: #261c20;
-	color: #f9c7c6;
+	color: #f9c7c6 !important; 
 }
 
 .main-navigation .sub-menu,
