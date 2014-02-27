@@ -34,58 +34,9 @@ get_header(); ?>
 
     <div class="timeline-home">
     	<div class="timeline-home-title"><h1>PROCESSO DE ELABORAÇÃO DO PLANO MUNICIPAL DE EDUCAÇÃO DA CIDADE DE SÃO PAULO</h1></div>
+        
         <div class="timeline-loop">
-        
-        <?php //adiciona cores para as diferentes cores
-		$azul = "#17557a";
-		$verde = "#7baf82";
-		$vermelho = "#bb484b";
-		//else
-		$category_color = "#ccc";
-		
-		$timeline_args = array(
-			'post_type'      => 'agenda',
-			'posts_per_page' => -1,
-			'meta_key'       => 'event_start',
-			'meta_compare'   => 'BETWEEN',
-			'meta_value'     => array( strtotime( 'now' ), strtotime( '+3 week' ) ),
-			'orderby'        => 'meta_value_num',
-			'order'          => 'ASC'
-		);
-		
-		$timeline_query = new WP_Query( $timeline_args );
-		while($timeline_query->have_posts()) : $timeline_query->the_post();
-		
-		// Inicio
-		$_event_start = get_post_meta( $post->ID, 'event_start', true );
-		if ( ! empty( $_event_start ) ) {
-			$inicio = date( 'd/m/y', $_event_start );
-		}
-	
-		// Término.
-		$_event_end = get_post_meta( $post->ID, 'event_end', true );
-		if ( ! empty( $_event_end ) ) {
-			$fim = date( 'd/m/y', $_event_end );
-		}
-
-		?>
-        
-        	<div class="cada-time">
-            	<div style="background-color: <?php echo $category_color; ?>" class="cada-category">
-                </div><!-- .cada-category -->
-                <div class="cada-content">
-                	<h3><?php echo $inicio; ?></h3>
-                    <h2><?php the_title(); ?></h2>
-                	<?php the_content(); ?>
-                </div><!-- .cada-content -->
-                <div class="cada-mais">
-                	<a href="<?php the_permalink(); ?>">Mais >></a>
-                </div><!-- .cada-mais -->
-			</div><!-- .cada-time -->
-            
-            <?php endwhile; ?>
-			<?php wp_reset_postdata(); // reset the query ?>
-            
+	        <?php donp_timeline(); ?>
         </div><!-- .timeline-loop -->
         
     </div><!-- .timeline-home -->
