@@ -338,10 +338,27 @@ body.single-project .flexslider { min-height: 485px; }
 }
 
 .slider-home {
-	width: 510px;
-	height: 310px;
-	margin-bottom: 20px;
-	float: left;
+    float: left;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.dev_content, .www_content {
+	display: none !important;
+}
+
+#content-slideshow {
+    background-color: #fbf7f8 !important;
+    border: 2px solid #302228 !important;
+    height: 250px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#content-slideshow .content_slideshow ul li img {
+	cursor: pointer;
 }
 
 #content-area {
@@ -350,7 +367,7 @@ body.single-project .flexslider { min-height: 485px; }
 
 .contador {
     float: left;
-    max-width: 430px;
+    max-width: 360px;
     overflow: hidden;
 }
 
@@ -962,3 +979,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffefe', end
 
 #ie7 .container > header { position: relative; z-index: 2; }
 #ie7 .main-area { position: relative; z-index: 1; }
+
+.slideshow-nav .clearfix {
+}
