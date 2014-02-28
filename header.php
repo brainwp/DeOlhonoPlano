@@ -41,10 +41,6 @@
 <body <?php body_class(); ?>>
 <div class="full-clearfix<?php if ( is_user_logged_in() ) : echo " logado"; endif; ?>">
 </div><!-- .full-clearfix -->
-<div class="full-menu<?php if ( is_user_logged_in() ) : echo " logado"; endif; ?>">
-</div><!-- .full-menu -->
-
-<div class="ilustra"></div>
 
 	<div class="container">
 		

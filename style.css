@@ -207,15 +207,6 @@ body.single-project .flexslider { min-height: 485px; }
 	position: relative;
 }
 
-.ilustra {
-	width: 1027px;
-	height: 152px;
-	position: absolute;
-	background: url("images/personagens.png") no-repeat scroll 0 0;
-	top: 124px;
-	right: 0;
-}
-
 @media only screen and ( max-width: 960px ) {
 	.ilustra {
 		right: -550px;
@@ -234,15 +225,13 @@ body.single-project .flexslider { min-height: 485px; }
 	}
 }
 
-
-
 .logado {
 	margin-top: 32px;
 }
 
 .full-clearfix {
 	width: 100%;
-	height: 305px;
+	height: 292px;
 	background: url("images/bg-header.jpg") no-repeat scroll center 0;
 	position: absolute;
 	top: 0;
@@ -262,14 +251,6 @@ body.single-project .flexslider { min-height: 485px; }
 }
 
 .top-menu {
-}
-
-.full-menu {
-	width: 100%;
-	background-color: #302228;
-	height: 50px;
-	position: absolute;
-	top: 243px;
 }
 
 .main-navigation {
