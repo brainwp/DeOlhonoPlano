@@ -39,6 +39,26 @@ get_header(); ?>
 	        <?php donp_timeline(); ?>
         </div><!-- .timeline-loop -->
         
+        <div class="quebra-cabeca">
+        	<?php 
+			//list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
+			
+			$args = array(
+			  'taxonomy'     => 'agenda-categoria',
+			  'orderby'      => 'name',
+			  'show_count'   => 0,
+			  'pad_counts'   => 0,
+			  'title_li'     => '',
+			  'hide_empty'   => 0,
+			  'walker' => new donp_wp_list_categories
+			);
+			?>
+			
+			<ul class="time-cats">
+				<?php wp_list_categories( $args ); ?>
+			</ul><!-- .time-cats -->
+        </div><!-- .quebra-cabeca -->
+        
     </div><!-- .timeline-home -->
     
     <div class="noticias-home">

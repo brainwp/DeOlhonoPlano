@@ -149,9 +149,9 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 
 		#breadcrumbs { font-size: 14px; text-transform: uppercase; padding: 21px 0 21px 20px; border-bottom: 1px solid #f0f0e5; }
 			#breadcrumbs a { font-weight: bold; color: #676761; text-decoration: none; }
-		#content-area { position: relative; padding-bottom: 10px; }
+		#content-area { position: relative; padding-bottom: 10px; background: #FFF;}
 		body.home #content-area { border-top: 1px solid #f0f0e5; }
-		#content-area:before { content: ''; position: absolute; height: 100%; top: 0; left: 640px; border-right: 1px solid #f0f0e5; }
+		#content-area:before { content: ''; position: absolute; height: 100%; top: 0; left: 640px; border-right:}
 		body.tax-project_category #content-area:before, #content-area.fullwidth:before { display: none; }
 			#left-area { width: 640px; float:left; }
 				.entry { border-bottom: 1px solid #f0f0e5; }
@@ -159,7 +159,7 @@ img#about-image { float: left; margin: 3px 8px 8px 0px; }
 					.entry .title, .page_title, #reply-title { font-weight: bold; font-size: 30px; padding: 20px 0 20px 20px; text-transform: uppercase; }
 						.title a, .page_title, #reply-title { color: #676761; text-decoration: none; }
 						.title a:hover { color: #000; }
-					.post-content { padding: 37px 50px 45px; }
+					.post-content { padding: 20px; }
 						.entry .meta-info { padding-bottom: 4px; font-size: 14px; }
 						.post-content p { font-size: 14px; font-weight: normal; }
 						.readmore { font-weight: bold; text-transform: uppercase; font-size: 14px; color: #676761; display: block; text-align: right; }
@@ -491,6 +491,13 @@ body.single-project .flexslider { min-height: 485px; }
 	overflow: hidden;
 }
 
+.quebra-cabeca {
+	width: 100%;
+	height: 250px;
+	margin: 10px auto;
+	background: url(images/bg-quebra-cabeca.jpg) center 0 repeat-x;
+}
+
 .cada-time, .item {
 	width: 250px;
 	height: 310px;
@@ -536,6 +543,59 @@ body.single-project .flexslider { min-height: 485px; }
 	color: #302228;
 }
 
+.time-cats {
+	max-width: 980px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+
+.time-cats li a {
+    float: left;
+    margin: 0.2%;
+    padding: 35px 0;
+    text-align: center;
+    width: 24%;
+	background: #FFF;
+	color: #333;
+	font-weight: bold;
+	height: 30px;
+}
+
+.time-cats li a:hover {
+	text-decoration: none;
+}
+
+.cat-diagnostico a:hover {
+	background-color: #E9D87C;
+	color: #333;
+}
+
+.cat-inicio-do-processo a:hover {
+	background-color: #7BB082;
+	color: #FFF;
+}
+
+.cat-conferencia-de-educacao a:hover {
+	background-color: #B0CED9;
+	color: #333;
+}
+
+.cat-conferencia-de-educacao a:hover {
+	background-color: #9A7EAE;
+	color: #FFF;
+}
+
+.cat-tramitacao-no-legislativo a:hover {
+	background-color: #BB484D;
+	color: #FFF;
+}
+
+.cat-levantamento-de-propostas a:hover {
+	background-color: #17557A;
+	color: #FFF;
+}
+
 .noticias-home {
 	width: 100%;
 	min-height: 300px;
@@ -560,6 +620,72 @@ body.single-project .flexslider { min-height: 485px; }
 	overflow: hidden;
 }
 
+/*------------------------------------------------*/
+/*--------------[ARCHIVE AGENDA]------------------*/
+/*------------------------------------------------*/
+
+.archive-agenda {
+}
+
+.archive-agenda .item {
+	min-height:310px;
+	text-align:center;
+	background:#fff;
+	color:#666;
+	-moz-box-shadow: -3px 1px 6px rgba(0,0,0,0.4);
+	-webkit-box-shadow: -3px 1px 6px rgba(0,0,0,0.4);
+	box-shadow: -3px 1px 6px rgba(0,0,0,0.4);
+	width:230px;
+}
+
+.archive-agenda .item span{
+	display:block;
+	font-size: 13px;
+	margin:0px 20px 10px;
+	height:150px;
+}
+.archive-agenda .item .read_more {
+	color:#999;
+	cursor:pointer;
+	background:url(images/read-more.png) no-repeat;
+	position: absolute;
+	padding: 10px 22px 10px 15px;
+	font-size: 1em;
+	margin: 5px 0 10px 0;
+	bottom: 5px;
+	right: 10px;
+}
+.archive-agenda h2 {
+    font-size: 24px;
+    padding-top: 10px;
+}
+.archive-agenda h3 {
+    font-size: 18px;
+}
+
+.archive-agenda h2, .archive-agenda h3 {
+	color: #313131;
+	margin: 10px 0;
+}
+
+.archive-agenda .item .read_more:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+#agenda-grid {
+	padding: 20px;
+	overflow: hidden;
+}
+
+#agenda-grid .archive-agenda {
+	padding-top: 30px;
+}
+
+
+.date-single {
+	padding: 0 0 20px 0;
+}
 
 /*------------------------------------------------*/
 /*--------------[FEATURED SLIDER]-----------------*/
