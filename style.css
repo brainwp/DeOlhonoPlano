@@ -486,14 +486,13 @@ body.single-project .flexslider { min-height: 485px; }
 }
 
 .timeline-loop {
-	max-width: 85%;
-	margin: 30px auto 15px auto;
+	margin: 10px auto 15px auto;
 	overflow: hidden;
 }
 
 .cada-time, .item {
 	width: 250px;
-	height: 310px;
+	/*height: 310px;*/
 	background: url(images/bg-cada.jpg) #F1F1F1;
 	float: left;
 	margin: 0 5px;
@@ -550,14 +549,15 @@ body.single-project .flexslider { min-height: 485px; }
 }
 
 .time-cats li a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
     float: left;
+    font-weight: bold;
+    height: 31px;
     margin: 0.2%;
     padding: 35px 0;
     text-align: center;
     width: 24%;
-	background: #FFF;
-	color: #333;
-	font-weight: bold;
 }
 
 .time-cats li a:hover {
