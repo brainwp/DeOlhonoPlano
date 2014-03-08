@@ -629,6 +629,49 @@ body.single-project .flexslider { min-height: 485px; }
 }
 
 /*------------------------------------------------*/
+/*-----------------[PAGE DOCUMENTOS]--------------*/
+/*------------------------------------------------*/
+.cada-download {
+    background: url("images/bg-timeline.jpg") repeat scroll center top rgba(0, 0, 0, 0);
+    border: 1px solid #2F2229;
+    height: 400px;
+    padding: 2% 3%;
+    width: 25%;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.cada-download h3 {
+	padding-top: 10px;
+}
+
+.cada-download a {
+	color: #b02686;
+}
+
+.cada-download a:hover {
+	color: #2F2229;
+	text-decoration: none;
+}
+
+.cada-download .entry-content-download p {
+	line-height: 1.4em;
+	padding-top: 5px;
+}
+
+.cada-download .botao-download {
+    background: url("images/icon-download.png") no-repeat scroll 8px 5px #fbf7f8;
+    padding: 8px 15px 9px 35px;
+	margin: 10px 0 0 0;
+	display: inline-block;
+}
+
+.no-bg {
+	background-color: transparent !important;
+}
+
+
+/*------------------------------------------------*/
 /*--------------[ARCHIVE AGENDA]------------------*/
 /*------------------------------------------------*/
 
