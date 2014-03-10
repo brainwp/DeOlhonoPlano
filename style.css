@@ -478,6 +478,12 @@ body.single-project .flexslider { min-height: 485px; }
 	background: #fbf7f9;
 }
 
+.t_line_month {
+	padding-top: 18px;
+	font-size: 1.1em;
+	color: #2f2229;
+}
+
 .timeline-home h1 {
 	text-align: center;
 	font-weight: bold;
