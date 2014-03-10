@@ -1161,3 +1161,10 @@ function donp_create_page_description( $term_id, $tt_id, $taxonomy ) {
 }
 
 add_action( 'created_term', 'donp_create_page_description', 10, 3 );
+
+function calendar_css(){
+
+	if ( is_page( 'Agenda' ) )
+		wp_enqueue_style( 'calendar-css', get_template_directory_uri() . '/css/calendar.css' );
+}
+add_action( 'wp_enqueue_scripts', 'calendar_css' );
