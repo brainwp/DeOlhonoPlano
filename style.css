@@ -351,7 +351,7 @@ body.single-project .flexslider { min-height: 485px; }
 
 #content-slideshow {
     background-color: #fbf7f8 !important;
-    border: 2px solid #302228 !important;
+    border: 2px solid #c06892 !important;
     height: 250px;
 	margin-top: 10px;
 	cursor: pointer;
@@ -363,6 +363,18 @@ body.single-project .flexslider { min-height: 485px; }
 
 #content-area {
 	overflow: hidden
+}
+
+
+#content-slideshow .slideshow-nav li p {
+	display: none;
+}
+
+
+#content-slideshow .slideshow-nav li a {
+	font-weight: lighter !important;
+	color: #676761 !important;
+	padding: 14px 9px 4px !important;
 }
 
 .contador {
@@ -917,6 +929,10 @@ body.tax-project_category .wp-pagenavi { border-top: 1px solid #F0F0E5; padding:
 
 #mobile_nav, #mobile_menu { display: none; }
 #mobile_menu { border: 1px solid #DFDFCE; border-width: 1px 0; background: #EFEFE3; z-index: 10; position: absolute; top: 44px; left: 0px; width: 440px; padding: 7px 0; }
+
+mobile_nav {
+	display: none;
+}
 
 .et_pt_gallery_entry { margin-left: 10px !important; }
 .et_embedded_videos { display: none !important; }
