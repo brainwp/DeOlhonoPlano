@@ -147,56 +147,29 @@ if ( ! function_exists( 'et_setup_theme' ) ){
 
 
 function et_register_main_menus() {
-
 	register_nav_menus(
-
 		array(
-
 			'primary-menu' => __( 'Primary Menu', 'Flexible' )
-
 		)
-
 	);
-
 }
 
-
-
 /**
-
  * Gets featured posts IDs from transient, if the transient doesn't exist - runs the query and stores IDs
-
  */
 
 function et_get_featured_posts_ids(){
-
 	if ( false === ( $et_featured_post_ids = get_transient( 'et_featured_post_ids' ) ) ) {
-
 		$featured_query = new WP_Query( apply_filters( 'et_featured_post_args', array(
-
 			'posts_per_page'	=> (int) et_get_option( 'flexible_featured_num' ),
-
 			'cat'				=> (int) get_catId( et_get_option( 'flexible_feat_posts_cat' ) )
-
 		) ) );
 
-
-
 		if ( $featured_query->have_posts() ) {
-
 			while ( $featured_query->have_posts() ) {
-
-
-
 				$featured_query->the_post();
-
-
-
 				$et_featured_post_ids[] = get_the_ID();
-
 			}
-
-
 
 			set_transient( 'et_featured_post_ids', $et_featured_post_ids );
 
@@ -1168,3 +1141,55 @@ function calendar_css(){
 		wp_enqueue_style( 'calendar-css', get_template_directory_uri() . '/css/calendar.css' );
 }
 add_action( 'wp_enqueue_scripts', 'calendar_css' );
+
+if (isset($_GET['activated']) && is_admin()){
+        $home_page_title = 'Home';
+        $home_page_content = '';
+        $home_page_template = 'page-home.php';
+        $page_check = get_page_by_title( $home_page_title );
+        $home_page = array(
+                'post_type' => 'page',
+                'post_title' => $home_page_title,
+                'post_content' => $home_page_content,
+                'post_status' => 'publish',
+                'post_author' => 1,
+        );
+        if(!isset( $page_check->ID )){
+                $home_page_id = wp_insert_post( $home_page );
+                if( !empty( $home_page_template ) ){
+                        update_post_meta( $home_page_id, '_wp_page_template', $home_page_template );
+                }
+        }
+
+        $agenda_page_template = 'page-agenda.php';
+        $agenda_page_check = get_page_by_title( 'Agenda' );
+        $agenda_page = array(
+                'post_type' => 'page',
+                'post_title' => 'Agenda',
+                'post_content' => '',
+                'post_status' => 'publish',
+                'post_author' => 1,
+        );
+        if(!isset( $agenda_page_check->ID )){
+                $agenda_page_id = wp_insert_post( $agenda_page );
+                if( !empty( $agenda_page_template ) ){
+                        update_post_meta( $agenda_page_id, '_wp_page_template', $agenda_page_template );
+                }
+        }
+
+        $documentos_page_template = 'page-documentos.php';
+        $documentos_page_check = get_page_by_title( 'Documentos' );
+        $documentos_page = array(
+                'post_type' => 'page',
+                'post_title' => 'Documentos',
+                'post_content' => '',
+                'post_status' => 'publish',
+                'post_author' => 1,
+        );
+        if(!isset( $documentos_page_check->ID )){
+                $documentos_page_id = wp_insert_post( $documentos_page );
+                if( !empty( $documentos_page_template ) ){
+                        update_post_meta( $documentos_page_id, '_wp_page_template', $documentos_page_template );
+                }
+        }
+}
