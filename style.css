@@ -339,7 +339,7 @@ body.single-project .flexslider { min-height: 485px; }
 
 .slider-home {
     float: left;
-    height: 250px;
+    /*height: 250px;*/
     margin-bottom: 20px;
     margin-top: 20px;
     width: 600px;
@@ -692,6 +692,23 @@ body.single-project .flexslider { min-height: 485px; }
 /*------------------------------------------------*/
 /*--------------[ARCHIVE AGENDA]------------------*/
 /*------------------------------------------------*/
+
+.btn-consult {
+	background: url("images/icon-calendar.png") no-repeat scroll left #ffcccc;
+	border: none;
+	padding: 8px 10px 8px 40px;
+	color: #2f2229;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-consult:hover {
+	background-color: #ffd7d7;
+}
 
 .archive-agenda {
 }
