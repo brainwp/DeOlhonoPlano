@@ -53,6 +53,10 @@ body {
 	padding: 0;
 }
 
+.site-content {
+	padding-top: 20px;
+}
+
 a { text-decoration: none; color:#b02686; }
 a:hover { text-decoration: underline; }
 .clear { clear: both; }
