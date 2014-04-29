@@ -43,7 +43,7 @@ if ( ! function_exists( 'et_setup_theme' ) ){
 
 
 		require_once($template_dir . '/includes/functions/comments.php');
-		require_once($template_dir . '/includes/flexible-slider/flexibleslider.php');
+		// require_once($template_dir . '/includes/flexible-slider/flexibleslider.php');
 
 
 
