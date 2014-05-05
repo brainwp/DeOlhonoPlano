@@ -355,7 +355,7 @@ body.single-project .flexslider { min-height: 485px; }
 
 #content-slideshow {
     background-color: #2F2229 !important;
-    border: 6px solid #2f2229 !important;
+    border: 2px solid #2f2229 !important;
     height: 250px;
 	margin-top: 10px;
 	cursor: pointer;
@@ -382,11 +382,12 @@ body.single-project .flexslider { min-height: 485px; }
 }
 
 #content-slideshow .slideshow-nav li a {
-	font-weight: 600 !important;
+	font-weight: inherit !important;
 	text-transform: uppercase;
 	/*color: #676761 !important;*/
 	padding: 14px 9px 4px !important;
 	font-family: 'Open Sans', sans-serif;
+	color: #695e5a !important;
 }
 
 #content-slideshow .slideshow-nav li a:hover {
