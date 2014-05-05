@@ -11,3 +11,4 @@ Vagrantfile
 *.swp
 *.swo
 *~
+sftp-config.json
