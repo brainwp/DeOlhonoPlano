@@ -382,8 +382,8 @@ body.single-project .flexslider { min-height: 485px; }
 }
 
 #content-slideshow .slideshow-nav li a {
+	font-size: 13px !important;
 	font-weight: inherit !important;
-	text-transform: uppercase;
 	/*color: #676761 !important;*/
 	padding: 14px 9px 4px !important;
 	font-family: 'Open Sans', sans-serif;
