@@ -66,7 +66,7 @@ get_header(); ?>
 		
 		<?php if ( 'on' == et_get_option('flexible_display_fromblog_section','on') && ( 'false' == et_get_option('flexible_blog_style','false') ) ) { ?>
             <section id="blog" class="clearfix">
-                <h1 class="section-title"><?php esc_html_e( '+ Not&iacute;cias', 'Flexible' ); ?></h1>
+                <a href="<?php echo home_url(); ?>/blog"><h1 class="section-title"><?php esc_html_e( '+ Not&iacute;cias', 'Flexible' ); ?></h1><span class="span-title">Ver todas>></span></a>
         
                 <div id="blog-grid">
                     <?php $i = 0; ?>

@@ -657,6 +657,21 @@ body.single-project .flexslider { min-height: 485px; }
 	margin: 0 auto;
 }
 
+.span-title {
+	background: #CCC;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+.span-title:hover {
+	color: #DDD;
+	background: #666;
+}
+
 .noticias-loop {
 	max-width: 960px;
 	margin: 30px auto 15px auto;
